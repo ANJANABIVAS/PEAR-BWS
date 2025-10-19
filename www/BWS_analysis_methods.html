@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BWS Analysis Methods</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background-color: #FFFFFF;
+  }
+
+  h2 {
+    color: #006d75;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  thead {
+    background: linear-gradient(to right, #009688, #4db6ac);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 16px 20px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #b2dfdb;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #e0f2f1;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+</style>
+</head>
+<body>
+
+<h2>Best-Worst Scaling (BWS) Analysis Methods</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis Method</th>
+      <th>BWS Case(s)</th>
+      <th>Use / Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Count Analysis</td>
+      <td>Case 1 & Case 2</td>
+      <td>Quick descriptive measure of most/least preferred items</td>
+    </tr>
+    <tr>
+      <td>Multinomial Logit model (MNL)</td>
+      <td>Case 1 & Case 3</td>
+      <td>Estimates population-level utilities for items or profiles</td>
+    </tr>
+    <tr>
+      <td>Paired Model / Marginal / Marginal Sequential Model</td>
+      <td>Case 2</td>
+      <td>Captures paired or sequential choices; compares best vs worst; suitable for Marginal and Sequential BWS analyses</td>
+    </tr>
+    <tr>
+      <td>Hierarchical Bayesian model (HB)</td>
+      <td>Case 1</td>
+      <td>Estimates individual-level and population-level utilities; accounts for heterogeneity</td>
+    </tr>
+    <tr>
+      <td>Latent Class Analysis (LCA)</td>
+      <td>Case 1 & Case 3</td>
+      <td>Identifies preference segments / clusters of respondents</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

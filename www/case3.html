@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BWS Case 3 (Multi-profile Case)</title>
+<link href="https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Georgia', serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+        color: #1B4670;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        line-height: 1.7;
+    }
+
+    h2 {
+        color: #1B4670;
+        margin-bottom: 20px;
+        font-size: 28px;
+        border-bottom: 3px solid #D93F2B;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .highlight {
+        color: #D93F2B;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 40px;
+        background-color: #DFF1FF;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #A2C4E3;
+        font-size: 15px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    img {
+        display: block;
+        max-width: 80%;
+        margin: 25px auto;
+        border-radius: 12px;
+        border: 2px solid #A2C4E3;
+        box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+    }
+
+    li:hover {
+        background-color: #d7e6f9;
+        padding-left: 5px;
+        transition: 0.3s;
+    }
+
+    .note {
+        font-size: 14px;
+        color: #6b7b8f;
+        margin-top: 8px;
+    }
+
+    .profiles {
+        background-color: #F4F9F9;
+        padding: 20px;
+        border: 1px solid #A2C4E3;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .profiles h3 {
+        color: #1B4670;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .profiles ul {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .profiles li {
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>BWS Case 3 (Multi-profile Case)</h2>
+
+    <p>The multi-profile case involves presenting respondents with several profiles at a time and asking them to identify the <span class="highlight">‘best’</span> and <span class="highlight">‘worst’</span> options from each choice set. Each profile represents a combination of different attribute levels.</p>
+
+    <p>Unlike the object or profile cases, where choices are made within individual profiles or among single attributes, the multi-profile case requires respondents to make choices between entire profiles. As the name implies, respondents evaluate <span class="highlight">three or more profiles</span> at a time in each choice set.</p>
+
+    <p>Suppose we have three attributes (A, B, C), each with three levels:</p>
+    <ul>
+        <li>A: A1, A2, A3</li>
+        <li>B: B1, B2, B3</li>
+        <li>C: C1, C2, C3</li>
+    </ul>
+
+    <p>We can generate 9 balanced profiles, which are then arranged into 12 choice sets, each containing 3 profiles. For example: </p>
+
+    <div class="profiles">
+        <h3>Generated Profiles </h3>
+        <ul>
+            <li>Profile 1: A1 — B1 — C1</li>
+            <li>Profile 2: A1 — B2 — C3</li>
+            <li>Profile 3: A1 — B3 — C2</li>
+            <li>Profile 4: A2 — B1 — C3</li>
+            <li>Profile 5: A2 — B2 — C2</li>
+            <li>Profile 6: A2 — B3 — C1</li>
+            <li>Profile 7: A3 — B1 — C2</li>
+            <li>Profile 8: A3 — B2 — C1</li>
+            <li>Profile 9: A3 — B3 — C3</li>
+        </ul>
+    </div>
+    
+    <h3>Choice sets </h3>
+    <ul>
+        <li><strong>Choice Set 1:</strong> Profile 1, Profile 2, Profile 3</li>
+        <li><strong>Choice Set 2:</strong> Profile 2, Profile 5, Profile 6</li>
+        <li><strong>Choice Set 3:</strong> Profile 2, Profile 4, Profile 8</li>
+        <li><strong>Choice Set 4:</strong> Profile 2, Profile 7, Profile 9</li>
+        <li><strong>Choice Set 5:</strong> Profile 3, Profile 4, Profile 5</li>
+        <li><strong>Choice Set 6:</strong> Profile 3, Profile 6, Profile 8</li>
+        <li><strong>Choice Set 7:</strong> Profile 3, Profile 7, Profile 9</li>
+        <li><strong>Choice Set 8:</strong> Profile 1, Profile 5, Profile 8</li>
+        <li><strong>Choice Set 9:</strong> Profile 1, Profile 6, Profile 9</li>
+        <li><strong>Choice Set 10:</strong> Profile 1, Profile 4, Profile 7</li>
+        <li><strong>Choice Set 11:</strong> Profile 5, Profile 7, Profile 9</li>
+        <li><strong>Choice Set 12:</strong> Profile 4, Profile 6, Profile 8</li>
+    </ul>
+    
+    <p>Example diagram of a multi-profile choice set:</p>
+    <img src="choice_set3.png" alt="Example: multi-profile choice set (3 profiles)">
+
+    <p>Respondents are presented with one choice set at a time and asked to select the most and least preferred profile from the set. This approach allows researchers to understand how respondents make trade-offs between different attribute combinations, providing deeper insights into preference structures.</p>
+
+    
+</div>
+
+</body>
+</html>
