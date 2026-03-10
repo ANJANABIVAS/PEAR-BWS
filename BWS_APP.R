@@ -38,13 +38,20 @@ ui <- dashboardPage(
                    ), 
        # --- Logo and Name  ---
         div(
-            style = "text-align: center; margin-top: 250px; padding: 10px;",
-            span("Developed by", style = "color: #777; font-size: 14px; display: block; margin-top: 5px;"),
-            strong("Anjana Bivas T", style = "font-size: 16px; color: #2c3e50; display: block;"),
-            span("M.Sc. Agricultural Statistics", style = "color: #555; display: block;"),
-            span("College of Agriculture, Vellayani", style = "color: #555; display: block;"),
-            span("Kerala Agricultural University", style = "color: #555; display: block;"),
-            span("Thiruvananthapuram", style = "color: #555; display: block;")
+          style = "text-align: center; margin-top: 250px; padding: 10px;",
+          span("Developed by", style = "color: #777; font-size: 13px; display: block; margin-top: 5px;"),
+          strong("Anjana Bivas T", style = "font-size: 14px; color: #2c3e50; display: block;"),
+          span("M.Sc. Agricultural Statistics", style = "font-size: 14px; color: #555; display: block;"),
+          span("College of Agriculture, Vellayani", style = "font-size: 14px; color: #555; display: block;"),
+          span("Kerala Agricultural University", style = "font-size: 14px; color: #555; display: block;"),
+          span("Thiruvananthapuram", style = "font-size: 14px; color: #555; display: block;"),
+          span("Under the guidance of", style = "color: #777; font-size: 13px; display: block; margin-top: 5px;"),
+          strong("Dr. Pratheesh P Gopinath", style = "font-size: 14px; color: #2c3e50; display: block;"),
+          span("Assistant Professor and Head", style = "font-size: 14px;color: #555; display: block;"),
+          span("Dept. of Agricultural Statistics", style = "font-size: 14px;color: #555; display: block;"),
+          span("College of Agriculture, Vellayani", style = "font-size: 14px;color: #555; display: block;"),
+          span("Kerala Agricultural University", style = "font-size: 14px;color: #555; display: block;"),
+          span("Thiruvananthapuram", style = "font-size: 14px;color: #555; display: block;")
         )                
   ),
   
@@ -185,7 +192,14 @@ ui <- dashboardPage(
                     h4("✨ Get Started with PEAR-BWS", style = "color: #006400; font-weight: bold; padding-left: 30px; font-family: Georgia, serif"),
                     p("● Go to 📝", strong("'Questionnaire Generation'"), " to create a BWS questionnaire.", style = "padding-left: 40px;"),
                     p("● Go to 📊", strong("'Statistical Analysis'"), " to analyze your BWS data.", style = "padding-left: 40px;"),
-                    p("● Use the 💾 'Download' options to save your results.", style = "padding-left: 40px;")
+                    p("● Use the 💾 'Download' options to save your results.", style = "padding-left: 40px;"),
+                    p(""),
+                    p("● This application also contains a tutorial to guide users step-by-step.",
+                      "Access it here:",
+                      tags$a("📘 Open Tutorial",
+                             href = "https://anjanabivas.github.io/PEAR-BWS/PEAR-BWS%20Tutorial.html",
+                             target = "_blank"),
+                      style = "padding-left: 40px;")
               )
       ),
       
