@@ -5,7 +5,7 @@ account: anjanabivast
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15785828
-bundleId: 11054129
+bundleId: 11690156
 url: https://anjanabivast.shinyapps.io/PEAR-BWS/
 version: 1
 asMultiple: FALSE
